@@ -18,7 +18,23 @@ Features
 Install
 =======
 
-.. TBD
+.. code-block:: console
+
+    # install the tool
+    pip install py-clash-configer
+    
+    # now write your overrides into ~/.config/clash/local.yaml with your
+    # favourite editor
+
+    # execute
+    py-clash-configer merge \
+        -l ~/.config/clash/local.yaml \
+        -o ~/.config/clash/ \
+        http://your-clash-config-subscription
+    
+    # generated configurations will be saved into
+    #   ~/.config/clash/config.yaml
+
 
 Development
 ===========
